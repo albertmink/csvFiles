@@ -19,6 +19,10 @@ args = parser.parse_args()
 mink 		= 'minkTauEins/100case'+str(args.caseNb)+'.csv'
 mcHardy = 'mcHardyRK/100case'+str(args.caseNb)+'.csv'
 lena 		= 'lena/lena'+str(args.caseNb)+'.csv'
+plot		= 'plots/gerichtet'+str(args.caseNb)+'.png'
+
+print("plot case "+str(args.caseNb)+' to '+plot)
+
 
 dataMink = np.genfromtxt( mink, delimiter=',', comments='#', dtype=float, usecols=(0,1) );
 plt.plot(dataMink[:,0],dataMink[:,1], '--', label=str(args.caseNb)+'mink');
@@ -30,9 +34,9 @@ dataLena = np.genfromtxt( lena, delimiter=',', comments='#', dtype=float, usecol
 plt.plot(dataLena[:,0],dataLena[:,1], '--', label=str(args.caseNb)+'lena');
 
 
-
+# define plot settings, e.g. axis
 plt.yscale('log');
 #plt.ylim([10e-15,7]);
 plt.legend(loc='upper right');
-plt.savefig("plots/gerichtet"+str(args.caseNb)+".png",dpi=240);
+plt.savefig(plot,dpi=240);
 plt.close()
