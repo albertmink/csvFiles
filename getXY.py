@@ -17,5 +17,4 @@ def getNorm( caseNb1, caseLena ):
     dM = getDataMink(caseNb1);
     dL = getDataLena(caseLena);
     index_to_keep = np.arange(1,100,1); # to slice array to voxel inside geometry
-    return LA.norm( np.subtract(dM[:,1][index_to_keep],dL[:,1][index_to_keep]) );
-
+    return 1./len(dM) *LA.norm( np.subtract(dM[:,1][index_to_keep],dL[:,1][index_to_keep]) );
