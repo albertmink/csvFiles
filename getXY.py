@@ -13,14 +13,12 @@ def getDataLena( caseFile ):
     return np.genfromtxt( caseFile, delimiter=',', comments='#', dtype=float, usecols=(0,8) );
 
 'compute l2 norm from voxel inside the geometry'
-def getNorm( caseNb1, caseLena ):
+def getNorm( caseNb1, dataLena ):
     dM = getDataMink(caseNb1);
-    dL = getDataLena(caseLena);
     index_to_keep = np.arange(1,100,1); # to slice array to voxel inside geometry
-    return 1./len(dM) *LA.norm( np.subtract(dM[:,1][index_to_keep],dL[:,1][index_to_keep]) );
+    return 1./len(dM) *LA.norm( np.subtract(dM[:,1][index_to_keep],dataLena[:,1][index_to_keep]) );
 
-def getNormRel( caseNb1, caseLena ):
+def getNormRel( caseNb1, dataLena ):
     dM = getDataMink(caseNb1);
-    dL = getDataLena(caseLena);
     index_to_keep = np.arange(1,100,1); # to slice array to voxel inside geometry
-    return 1./len(dM) *LA.norm( np.divide( np.subtract(dM[:,1][index_to_keep],dL[:,1][index_to_keep]), dL[:,1][index_to_keep] ) );
+    return 1./len(dM) *LA.norm( np.divide( np.subtract(dM[:,1][index_to_keep],dataLena[:,1][index_to_keep]), dataLena[:,1][index_to_keep] ) );
