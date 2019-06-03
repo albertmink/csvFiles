@@ -11,48 +11,51 @@ import matplotlib.pyplot as plt
 erMacro = pd.DataFrame(index=np.arange(1,36))
 erMeso = pd.DataFrame(index=np.arange(1,36))
 
+dfCase = pd.read_csv('caseDefinition.csv',index_col=0)
+energy1 = []
+energy2 = []
+energy3 = []
 
 for i in range(1,36):
-    dataLena = getXY.getDataLena('lena/lena'+str(i)+'.csv')
+    mfp = dfCase.loc[i].mfp
+    indexAwayFromBoundary = 1
+    # mask boundary region about a mfp
+    #indexAwayFromBoundary = int(round(mfp,2)*100) *1
+    #print(indexAwayFromBoundary)
+    dataLena1 = getXY.getDataLena('lena/lena'+str(i)+'.csv', 1)
+    dataLena2 = getXY.getDataLena('lena/lena'+str(i)+'.csv', 2)
+    dataLena3 = getXY.getDataLena('lena/lena'+str(i)+'.csv', 3)
     # macro 
-    erMacro.at[i,'abs50'] = getXY.getNorm('mink/50case'+str(i)+'.csv', dataLena )
-    erMacro.at[i,'abs100'] = getXY.getNorm('mink/100case'+str(i)+'.csv', dataLena )
-    erMacro.at[i,'abs150'] = getXY.getNorm('mink/150case'+str(i)+'.csv', dataLena )
-    erMacro.at[i,'rel50'] = getXY.getNormRel('mink/50case'+str(i)+'.csv', dataLena )
-    erMacro.at[i,'rel100'] = getXY.getNormRel('mink/100case'+str(i)+'.csv', dataLena )
-    erMacro.at[i,'absT1_100'] = getXY.getNorm('minkTauEins/100case'+str(i)+'.csv', dataLena )
-    erMacro.at[i,'relT1_100'] = getXY.getNormRel('minkTauEins/100case'+str(i)+'.csv', dataLena )
-    dfMacro = pd.DataFrame(index=np.linspace(0,1,101))
-    dfMacro['50'] = pd.Series(getXY.getDataMink('mink/50case'+str(i)+'.csv')[:,1], index=dfMacro.index)
-    dfMacro['100'] = pd.Series(getXY.getDataMink('mink/100case'+str(i)+'.csv')[:,1], index=dfMacro.index)
-    dfMacro['150'] = pd.Series(getXY.getDataMink('mink/150case'+str(i)+'.csv')[:,1], index=dfMacro.index)
-    dfMacro['MC'] = pd.Series(getXY.getDataLena('lena/lena'+str(i)+'.csv')[:,1], index=dfMacro.index)
-    #plot single cases
-    dfMacro.plot()
-    plt.yscale('log')
-    plt.savefig('plots/macroMC'+str(i)+'.png')
-    plt.close()
+    erMacro.at[i,'absMa1'] = getXY.getNorm4('mink3/50case'+str(i)+'.csv', dataLena1, 1, indexAwayFromBoundary)
+    erMacro.at[i,'absMa2'] = getXY.getNorm4('mink3/50case'+str(i)+'.csv', dataLena2, 2, indexAwayFromBoundary)
+    erMacro.at[i,'absMa3'] = getXY.getNorm4('mink3/50case'+str(i)+'.csv', dataLena3, 3, indexAwayFromBoundary)
+
     # meso
-    erMeso.at[i,'absMeso'] = getXY.getNorm('mcHardyRK/100case'+str(i)+'.csv', dataLena )
-    erMeso.at[i,'relMeso'] = getXY.getNormRel('mcHardyRK/100case'+str(i)+'.csv', dataLena )
-    dfMeso = pd.DataFrame(index=np.linspace(0,1,101))
-    dfMeso['100'] = pd.Series(getXY.getDataMcHardy('mcHardyRK/100case'+str(i)+'.csv')[:,1], index=dfMacro.index)
-    #plot single cases
-    dfMeso.plot()
-    plt.yscale('log')
-    plt.savefig('plots/mesoMC'+str(i)+'.png')
-    plt.close()
+    erMeso.at[i,'absMe1'] = getXY.getNorm('mcHardyRK/100case'+str(i)+'.csv', dataLena1, 1, indexAwayFromBoundary)
+    erMeso.at[i,'absMe2'] = getXY.getNorm('mcHardyRK/100case'+str(i)+'.csv', dataLena2, 2, indexAwayFromBoundary)
+    erMeso.at[i,'absMe3'] = getXY.getNorm('mcHardyRK/100case'+str(i)+'.csv', dataLena3, 3, indexAwayFromBoundary)
+
+    energy1.append(getXY.getTotalEnergy('lena/lena'+str(i)+'.csv', 1))
+    energy2.append(getXY.getTotalEnergy('lena/lena'+str(i)+'.csv', 2))
+    energy3.append(getXY.getTotalEnergy('lena/lena'+str(i)+'.csv', 3))
 
 
 tmp = erMacro.join(erMeso)
-print(tmp)
-tmp.to_csv('err.csv', float_format='%8.6e')
+tmp['totalEnergy1'] = energy1
+tmp['totalEnergy2'] = energy2
+tmp['totalEnergy3'] = energy3
+tmp['absMa1Normalized'] = tmp['absMa1']/tmp['totalEnergy1']
+tmp['absMe1Normalized'] = tmp['absMe1']/tmp['totalEnergy1']
+tmp['absMa2Normalized'] = tmp['absMa2']/tmp['totalEnergy2']
+tmp['absMe2Normalized'] = tmp['absMe2']/tmp['totalEnergy2']
+tmp['absMa3Normalized'] = tmp['absMa3']/tmp['totalEnergy3']
+tmp['absMe3Normalized'] = tmp['absMe3']/tmp['totalEnergy3']
 
-tmp[['abs50','abs100','abs150','absT1_100','absMeso']].plot()
+tmp.index.names = ['case']
+print(tmp)
+tmp.to_csv('err_totalEnergy_review.csv', float_format='%8.6e')
+
+tmp[['absMa1Normalized','absMe1Normalized']].plot()
 plt.yscale('log');
-plt.savefig('absErr.png',dpi=240);
-plt.close()
-tmp[['rel50','rel100','relT1_100','relMeso']].plot()
-plt.yscale('log');
-plt.savefig('relErr.png',dpi=240);
+plt.savefig('errorNormalized.png',dpi=240);
 plt.close()
