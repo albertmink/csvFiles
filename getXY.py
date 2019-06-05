@@ -18,7 +18,7 @@ def getTotalEnergy( caseLena, line, indexAwayFromBoundary=0 ):
     if len(index_to_keep) < 1:
       return 1
     else:
-      return 1./len(index_to_keep) * np.sum(dataLena[:,1][index_to_keep]) ;
+      return 1./len(index_to_keep) * LA.norm(dataLena[:,1][index_to_keep], ord=1);
 
 'compute l2 norm from voxel inside the geometry'
 def getNorm( caseNb1, dataLena, line, indexAwayFromBoundary=0 ):
