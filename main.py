@@ -20,7 +20,7 @@ setUp = 'infiniteBeam/'
 
 for i in range(1,36):
     mfp = dfCase.loc[i].mfp
-    indexAwayFromBoundary = 1
+    indexAwayFromBoundary = 2
     # mask boundary region about a mfp
     #indexAwayFromBoundary = int(round(mfp,2)*100) *1
     #print(indexAwayFromBoundary)
@@ -37,9 +37,9 @@ for i in range(1,36):
     erMeso.at[i,'absMe2'] = getXY.getNorm(setUp+'mcHardyRK/100case'+str(i)+'.csv', dataLena2, 2, indexAwayFromBoundary)
     erMeso.at[i,'absMe3'] = getXY.getNorm(setUp+'mcHardyRK/100case'+str(i)+'.csv', dataLena3, 3, indexAwayFromBoundary)
 
-    energy1.append(getXY.getTotalEnergy(setUp+'lena/lena'+str(i)+'.csv', 1))
-    energy2.append(getXY.getTotalEnergy(setUp+'lena/lena'+str(i)+'.csv', 2))
-    energy3.append(getXY.getTotalEnergy(setUp+'lena/lena'+str(i)+'.csv', 3))
+    energy1.append(getXY.getTotalEnergy(setUp+'lena/lena'+str(i)+'.csv', 1, indexAwayFromBoundary))
+    energy2.append(getXY.getTotalEnergy(setUp+'lena/lena'+str(i)+'.csv', 2, indexAwayFromBoundary))
+    energy3.append(getXY.getTotalEnergy(setUp+'lena/lena'+str(i)+'.csv', 3, indexAwayFromBoundary))
 
 
 tmp = erMacro.join(erMeso)
