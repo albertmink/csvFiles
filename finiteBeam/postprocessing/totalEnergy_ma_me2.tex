@@ -1,0 +1,32 @@
+\documentclass[class=minimal,border=0pt]{standalone}
+\usepackage{pgfplots,tikz}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{pgfplots.colorbrewer}
+\usepackage{amsmath,amssymb}
+\usepackage{KITcolors}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}
+[
+grid=major,
+legend cell align=right,
+legend pos=north west,
+ymode=log,
+xlabel={optical depth},
+%xmin=1,
+ymin=0.001,ymax=1,
+/pgfplots/xtick={2,4,6,8,12,20,30},
+ylabel={error},
+point meta min=0,
+point meta max=4,
+colormap/Set1-5
+]
+\addplot[scatter, only marks, mark=square*, point meta={mod(\thisrow{case},5)}]
+  table [x=mu_t, y=absMa2Normalized, col sep=comma] {err_finiteBeam.csv};
+\addplot[scatter, only marks, mark=*, point meta={mod(\thisrow{case},5)}]
+  table [x=mu_t, y=absMe2Normalized, col sep=comma] {err_finiteBeam.csv};
+\addlegendentry{macro RTLBM}
+\addlegendentry{meso RTLBM}
+\end{axis}
+\end{tikzpicture}
+\end{document}
