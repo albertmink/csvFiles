@@ -10,7 +10,7 @@ def getDataMcHardy( caseFile, line=1 ):
     return getDataMink(caseFile, line);
 
 def getDataLena( caseFile, line=1 ):
-    return np.genfromtxt( caseFile, delimiter=',', comments='#', dtype=float, usecols=(0,7+line) );
+    return getDataMink(caseFile, line);
 
 def getTotalEnergy( caseLena, line, indexAwayFromBoundary=0 ):
     dataLena = getDataLena( caseLena, line )
