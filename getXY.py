@@ -31,10 +31,15 @@ def getNorm( caseNb1, dataLena, line, indexAwayFromBoundary=0 ):
 
 def getNorm4( caseNb1, dataLena, line, indexAwayFromBoundary=0 ):
     dM = getDataMink(caseNb1, line);
-    if "infinite" in caseNb1:
+    if caseNb1.startswith("infiniteBeam/"):
       dM [:,1] = np.multiply(dM[:,1],5)
+      #print( "scale by " + str(5) )
+    elif caseNb1.startswith("finiteBeamDiffuse/"):
+      dM [:,1] = np.multiply(dM[:,1],3)
+      #print( "scale by " + str(3) )
     else:
       dM [:,1] = np.multiply(dM[:,1],4)
+      #print( "scale by " + str(4) )
     index_to_keep = np.arange(1+indexAwayFromBoundary,97,1); # to slice array to voxel inside geometry
     if len(index_to_keep) < 1:
         return 1

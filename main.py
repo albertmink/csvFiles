@@ -54,10 +54,11 @@ tmp['absMa3Normalized'] = tmp['absMa3']/tmp['totalEnergy3']
 tmp['absMe3Normalized'] = tmp['absMe3']/tmp['totalEnergy3']
 
 tmp.index.names = ['case']
-print(tmp)
 
 tmp.insert(loc=0,column='mu_t',value=dfCase['mu_t'].values)
-tmp.to_csv(setUp[:-1]+'.csv', float_format='%8.6e')
+
+print(tmp[['absMa1', 'absMa1Normalized', 'absMe1', 'absMe1Normalized']])
+tmp.to_csv('err_'+setUp[:-1]+'.csv', float_format='%8.6e')
 
 #tmp[['absMa1Normalized','absMe1Normalized']].plot()
 #plt.yscale('log');
