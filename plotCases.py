@@ -7,6 +7,18 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 path = 'finiteBeam/'
+
+# scaling for diffuse mode
+## finiteBeam
+#  * factor 4
+## finiteBeamDiffuse
+#  * factor 3
+## infiniteBeam
+#  * factor 5
+## infiniteBeamDiffuse
+#  * factor 4
+
+
 line = 1
 
 for i in range(1,36):

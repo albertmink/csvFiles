@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 dfErr =pd.read_csv("err_infiniteBeam.csv", index_col='case')
-dfCase =pd.read_csv("caseDefinition.csv", index_col='case')
+dfCase =pd.read_csv("../../caseDefinition.csv", index_col='case')
 
 x = dfCase["mu_t"].unique()
 y = dfCase["albedo"].unique()
