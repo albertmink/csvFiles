@@ -1,0 +1,32 @@
+\documentclass[class=minimal,border=0pt]{standalone}
+\usepackage{pgfplots,tikz}
+\pgfplotsset{compat=newest}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}
+[
+grid=major,
+legend cell align=right,
+legend pos=south east,
+ymode=log,
+xlabel={Optical depth},
+xmax=40,
+ymin=0.001,ymax=1,
+/pgfplots/xtick={2,4,6,8,12,20,30},
+ylabel={Error}
+]
+\addlegendentry{meso RTLBM}
+\addplot[mark=square*, color=black] table [x=mu_t, y=absMe2Normalized, col sep=comma] {finiteDiffuseAlbedo01.csv};
+\addplot[mark=square*, color=black] table [x=mu_t, y=absMe2Normalized, col sep=comma] {finiteDiffuseAlbedo04.csv};
+\addplot[mark=square*, color=black] table [x=mu_t, y=absMe2Normalized, col sep=comma] {finiteDiffuseAlbedo07.csv};
+\addplot[mark=square*, color=black] table [x=mu_t, y=absMe2Normalized, col sep=comma] {finiteDiffuseAlbedo09.csv};
+\addplot[mark=square*, color=black] table [x=mu_t, y=absMe2Normalized, col sep=comma] {finiteDiffuseAlbedo10.csv};
+\node [coordinate,pin=right:{a=0.1}] at (axis cs:30,1.94e-1) {};
+\node [coordinate,pin=right:{a=0.4}] at (axis cs:30,1.34e-1) {};
+\node [coordinate,pin=right:{a=0.7}] at (axis cs:30,8.1e-2) {};
+\node [coordinate,pin=right:{a=0.9}] at (axis cs:30,4.75e-2) {};
+\node [coordinate,pin=right:{a=1.0}] at (axis cs:30,1.76e-2) {};
+\end{axis}
+\end{tikzpicture}
+\end{document}
