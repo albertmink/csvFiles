@@ -1,0 +1,8 @@
+Collision models
+  f^\star_i = f_i -|c_i| \mu_s (f_i -f^eq_i) -|c_i| \mu_a f_i
+  mit Equilibrium
+    iso f_i^eq = w_i rho
+    P1  f_i^eq = w_i( rho + s_i * J )
+    mcHardyRK f_i^eq mit Matrixeintraegen EINS && Runge-Kutta
+
+Stencils are Lebedev stencils
