@@ -1,0 +1,59 @@
+\documentclass[class=minimal,border=0pt]{standalone}
+\usepackage{pgfplots,tikz}
+\pgfplotsset{compat=newest}
+\usepackage{amsmath,amssymb}
+\usepackage{KITcolors}
+\begin{document}
+\begin{tikzpicture}
+\pgfplotsset{set layers}
+% mc
+\begin{axis}
+[
+grid=major,
+scale only axis,
+ymode=log,
+ymin=2.0157237799999998e-05, ymax=10,
+xmin=0, xmax=1,
+axis x line*=bottom,
+xlabel={Distance},
+ylabel={Radiative intensity}
+]
+\addplot[KIT-Rot] table [x index=0, y index=1, col sep=comma] {../lena/lena1.csv};
+\label{mc}
+\addplot[KIT-Rot] table [x index=0, y index=2, col sep=comma] {../lena/lena1.csv};
+\addplot[KIT-Rot] table [x index=0, y index=3, col sep=comma] {../lena/lena1.csv};
+\end{axis}
+% macro
+\begin{axis}
+[
+scale only axis,
+ymode=log,
+ymin=2.0157237799999998e-05, ymax=10,
+xmin=0, xmax=1,
+hide axis=true
+]
+\addplot[KIT-Gruen,only marks, mark repeat={3},mark=triangle] table [x index=0, y index=1, col sep=comma] {../mink/4mult_50case1.csv};
+\label{ma}
+\addplot[KIT-Gruen,only marks, mark repeat={3},mark=triangle] table [x index=0, y index=2, col sep=comma] {../mink/4mult_50case1.csv};
+\addplot[KIT-Gruen,only marks, mark repeat={3},mark=triangle] table [x index=0, y index=3, col sep=comma] {../mink/4mult_50case1.csv};
+\end{axis}
+% meso
+\begin{axis}
+[
+scale only axis,
+legend pos=north east,
+legend cell align=right,
+ymode=log,
+ymin=2.0157237799999998e-05, ymax=10,
+xmin=0, xmax=1,
+hide axis=true
+]
+\addlegendimage{/pgfplots/refstyle=mc}\addlegendentry{Monte--Carlo}
+\addlegendimage{/pgfplots/refstyle=ma}\addlegendentry{macro RTLBM}
+\addplot[KIT-Blau, only marks, mark repeat={3},mark=o] table [x index=0, y index=1, col sep=comma] {../mcHardyRK/100case1.csv};
+\addplot[KIT-Blau, only marks, mark repeat={3},mark=o] table [x index=0, y index=2, col sep=comma] {../mcHardyRK/100case1.csv};
+\addplot[KIT-Blau, only marks, mark repeat={3},mark=o] table [x index=0, y index=3, col sep=comma] {../mcHardyRK/100case1.csv};
+\addlegendentry{meso RTLBM}
+\end{axis}
+\end{tikzpicture}
+\end{document}
