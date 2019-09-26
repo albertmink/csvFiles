@@ -1,0 +1,304 @@
+[MpiManager] Sucessfully initialized, numThreads=1
+[Directories] Directory ./100case33_mcHardy/ created.
+[Directories] Directory ./100case33_mcHardy/imageData/ created.
+[Directories] Directory ./100case33_mcHardy/imageData/data/ created.
+[Directories] Directory ./100case33_mcHardy/vtkData/ created.
+[Directories] Directory ./100case33_mcHardy/vtkData/data/ created.
+[Directories] Directory ./100case33_mcHardy/gnuplotData/ created.
+[Directories] Directory ./100case33_mcHardy/gnuplotData/data/ created.
+[main] case33
+[main] omega = .... 1
+[main] omega 1
+[main] working with direct discretization
+[AnisotropyMatrix] Call AnistorpiyMatrix()
+[AnisotropyMatrix] Compute anisotropy matrix ...
+[AnisotropyMatrix] Terminate after 0 iterations
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[main] 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+[RadiativeUnitConverter] ----------------- UnitConverter information -----------------
+[RadiativeUnitConverter] -- Parameters:
+[RadiativeUnitConverter] Resolution:                       N=              100
+[RadiativeUnitConverter] Lattice relaxation frequency:     omega=          1
+[RadiativeUnitConverter] Lattice relaxation time:          tau=            1
+[RadiativeUnitConverter] Characteristical length(m):       charL=          1
+[RadiativeUnitConverter] Phys. density(kg/m^d):            charRho=        1
+[RadiativeUnitConverter] Phys. absorption(1/m):            mu_a=           9
+[RadiativeUnitConverter] Phys. scattering(1/m):            mu_s=           21
+[RadiativeUnitConverter] Extinction(1/m):                  mu_t=           30
+[RadiativeUnitConverter] Effective attenuation(1/m):       mu_eff=         28.4605
+[RadiativeUnitConverter] Phys. diffusion(m):               D=              0.0111111
+[RadiativeUnitConverter] Single scattering albedo:         albedo=         0.7
+[RadiativeUnitConverter] Anisotropy factor:                g=              0
+[RadiativeUnitConverter] 
+[RadiativeUnitConverter] Lattice diffusion:                D^*=            1.11111
+[RadiativeUnitConverter] Lattice absorption:               absorption=     0.09
+[RadiativeUnitConverter] Lattice scattering:               scattering=     0.21
+[RadiativeUnitConverter] Lattice sink:                     sink=           0.010125
+[RadiativeUnitConverter] C_R: 1
+[RadiativeUnitConverter] r_F: 1.63265
+[RadiativeUnitConverter] 
+[RadiativeUnitConverter] -- Conversion factors:
+[RadiativeUnitConverter] Voxel length(m):                  physDeltaX=     0.01
+[RadiativeUnitConverter] Time step(s):                     physDeltaT=     1.66667e-05
+[RadiativeUnitConverter] Density factor(kg/m^3):           physDensity=    1
+[RadiativeUnitConverter] -------------------------------------------------------------
+[prepareGeometryCube] Prepare cubeGeometry ...
+[SuperGeometry3D] cleaned 0 outer boundary voxel(s)
+[SuperGeometry3D] cleaned 0 inner boundary voxel(s)
+[SuperGeometry3D] the model is correct!
+[CuboidGeometry3D] ---Cuboid Stucture Statistics---
+[CuboidGeometry3D]  Number of Cuboids: 	2
+[CuboidGeometry3D]  Delta  (min): 		0.01
+[CuboidGeometry3D]         (max): 		0.01
+[CuboidGeometry3D]  Ratio  (min): 		0.49505
+[CuboidGeometry3D]         (max): 		2.02
+[CuboidGeometry3D]  Nodes  (min): 		510050
+[CuboidGeometry3D]         (max): 		520251
+[CuboidGeometry3D]  Weight (min): 		510050
+[CuboidGeometry3D]         (max): 		520251
+[CuboidGeometry3D] --------------------------------
+[SuperGeometryStatistics3D] materialNumber=1; count=970299; minPhysR=(0.01,-0.49,-0.49); maxPhysR=(0.99,0.49,0.49)
+[SuperGeometryStatistics3D] materialNumber=2; count=59561; minPhysR=(0,-0.5,-0.5); maxPhysR=(1,0.5,0.5)
+[SuperGeometryStatistics3D] materialNumber=3; count=441; minPhysR=(0,-0.1,-0.1); maxPhysR=(0,0.1,0.1)
+[prepareGeometryCube] Prepare cubeGeometry ... OK
+[prepareLattice] Prepare Lattice ...
+[prepareLattice] Prepare Lattice ... OK
+[LatticeStatistics] step=0; t=0; uMax=0; avEnergy=0; avRho=1
+[Timer] step=0; percent=0; passedTime=0; remTime=0.001; MLUPs=0
+[Timer] step=0; percent=0; passedTime=0; remTime=0.001; MLUPs=0
+[ValueTracer] average=0.00152351; stdDev/average=0.586221
+[LatticeStatistics] step=20; t=0.000333333; uMax=0; avEnergy=0; avRho=0.00356577
+[Timer] step=20; percent=0.00277778; passedTime=44.735; remTime=1.61042e+06; MLUPs=0.460624
+[Timer] step=20; percent=0.00277778; passedTime=44.735; remTime=1.61042e+06; MLUPs=0.460624
+[ValueTracer] average=0.0032497; stdDev/average=0.0787203
+[ValueTracer] average=0.00372804; stdDev/average=0.0185937
+[LatticeStatistics] step=40; t=0.000666667; uMax=0; avEnergy=0; avRho=0.00388235
+[Timer] step=40; percent=0.00555556; passedTime=89.349; remTime=1.60819e+06; MLUPs=0.461863
+[Timer] step=40; percent=0.00555556; passedTime=89.349; remTime=1.60819e+06; MLUPs=0.461863
+[ValueTracer] average=0.00385855; stdDev/average=0.00496701
+[ValueTracer] average=0.00389492; stdDev/average=0.00138879
+[LatticeStatistics] step=60; t=0.001; uMax=0; avEnergy=0; avRho=0.00390718
+[Timer] step=60; percent=0.00833333; passedTime=134.237; remTime=1.61071e+06; MLUPs=0.459054
+[Timer] step=60; percent=0.00833333; passedTime=134.237; remTime=1.61071e+06; MLUPs=0.459054
+[ValueTracer] average=0.00390525; stdDev/average=0.000396613
+[ValueTracer] average=0.00390822; stdDev/average=0.000114575
+[LatticeStatistics] step=80; t=0.00133333; uMax=0; avEnergy=0; avRho=0.00390924
+[Timer] step=80; percent=0.0111111; passedTime=179.292; remTime=1.61345e+06; MLUPs=0.457353
+[Timer] step=80; percent=0.0111111; passedTime=179.292; remTime=1.61345e+06; MLUPs=0.457353
+[ValueTracer] average=0.00390908; stdDev/average=3.33308e-05
+[ValueTracer] average=0.00390933; stdDev/average=9.7395e-06
+[LatticeStatistics] step=100; t=0.00166667; uMax=0; avEnergy=0; avRho=0.00390941
+[Timer] step=100; percent=0.0138889; passedTime=224.596; remTime=1.61687e+06; MLUPs=0.454839
+[Timer] step=100; percent=0.0138889; passedTime=224.596; remTime=1.61687e+06; MLUPs=0.454839
+[ValueTracer] average=0.0039094; stdDev/average=2.8543e-06
+[ValueTracer] average=0.00390942; stdDev/average=8.3814e-07
+[LatticeStatistics] step=120; t=0.002; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=120; percent=0.0166667; passedTime=270.113; remTime=1.62041e+06; MLUPs=0.45271
+[Timer] step=120; percent=0.0166667; passedTime=270.113; remTime=1.62041e+06; MLUPs=0.45271
+[ValueTracer] average=0.00390943; stdDev/average=2.46445e-07
+[ValueTracer] average=0.00390943; stdDev/average=7.25335e-08
+[LatticeStatistics] step=140; t=0.00233333; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=140; percent=0.0194444; passedTime=315.623; remTime=1.62289e+06; MLUPs=0.45278
+[Timer] step=140; percent=0.0194444; passedTime=315.623; remTime=1.62289e+06; MLUPs=0.45278
+[ValueTracer] average=0.00390943; stdDev/average=2.13629e-08
+[ValueTracer] average=0.00390943; stdDev/average=6.29521e-09
+[LatticeStatistics] step=160; t=0.00266667; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=160; percent=0.0222222; passedTime=361.097; remTime=1.62458e+06; MLUPs=0.453138
+[Timer] step=160; percent=0.0222222; passedTime=361.097; remTime=1.62458e+06; MLUPs=0.453138
+[ValueTracer] average=0.00390943; stdDev/average=1.85583e-09
+[ValueTracer] average=0.00390943; stdDev/average=5.47304e-10
+[LatticeStatistics] step=180; t=0.003; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=180; percent=0.025; passedTime=406.559; remTime=1.62583e+06; MLUPs=0.453268
+[Timer] step=180; percent=0.025; passedTime=406.559; remTime=1.62583e+06; MLUPs=0.453268
+[ValueTracer] average=0.00390943; stdDev/average=1.61443e-10
+[ValueTracer] average=0.00390943; stdDev/average=4.76081e-11
+[LatticeStatistics] step=200; t=0.00333333; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=200; percent=0.0277778; passedTime=452.059; remTime=1.62696e+06; MLUPs=0.45288
+[Timer] step=200; percent=0.0277778; passedTime=452.059; remTime=1.62696e+06; MLUPs=0.45288
+[ValueTracer] average=0.00390943; stdDev/average=1.40474e-11
+[ValueTracer] average=0.00390943; stdDev/average=4.11235e-12
+[LatticeStatistics] step=220; t=0.00366667; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=220; percent=0.0305556; passedTime=497.556; remTime=1.62787e+06; MLUPs=0.452919
+[Timer] step=220; percent=0.0305556; passedTime=497.556; remTime=1.62787e+06; MLUPs=0.452919
+[ValueTracer] average=0.00390943; stdDev/average=1.24165e-12
+[ValueTracer] average=0.00390943; stdDev/average=3.5952e-13
+[LatticeStatistics] step=240; t=0.004; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=240; percent=0.0333333; passedTime=542.998; remTime=1.62845e+06; MLUPs=0.453458
+[Timer] step=240; percent=0.0333333; passedTime=542.998; remTime=1.62845e+06; MLUPs=0.453458
+[ValueTracer] average=0.00390943; stdDev/average=1.0647e-13
+[ValueTracer] average=0.00390943; stdDev/average=2.76238e-14
+[LatticeStatistics] step=260; t=0.00433333; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=260; percent=0.0361111; passedTime=588.436; remTime=1.62893e+06; MLUPs=0.453498
+[Timer] step=260; percent=0.0361111; passedTime=588.436; remTime=1.62893e+06; MLUPs=0.453498
+[ValueTracer] average=0.00390943; stdDev/average=9.7123e-15
+[ValueTracer] average=0.00390943; stdDev/average=3.1972e-15
+[LatticeStatistics] step=280; t=0.00466667; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=280; percent=0.0388889; passedTime=633.984; remTime=1.62961e+06; MLUPs=0.452412
+[Timer] step=280; percent=0.0388889; passedTime=633.984; remTime=1.62961e+06; MLUPs=0.452412
+[ValueTracer] average=0.00390943; stdDev/average=9.02732e-16
+[ValueTracer] average=0.00390943; stdDev/average=1.65368e-16
+[LatticeStatistics] step=300; t=0.005; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=300; percent=0.0416667; passedTime=679.438; remTime=1.62997e+06; MLUPs=0.453328
+[Timer] step=300; percent=0.0416667; passedTime=679.438; remTime=1.62997e+06; MLUPs=0.453328
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[LatticeStatistics] step=320; t=0.00533333; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=320; percent=0.0444444; passedTime=724.881; remTime=1.63026e+06; MLUPs=0.453448
+[Timer] step=320; percent=0.0444444; passedTime=724.881; remTime=1.63026e+06; MLUPs=0.453448
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[LatticeStatistics] step=340; t=0.00566667; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=340; percent=0.0472222; passedTime=770.314; remTime=1.63048e+06; MLUPs=0.453547
+[Timer] step=340; percent=0.0472222; passedTime=770.314; remTime=1.63048e+06; MLUPs=0.453547
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[LatticeStatistics] step=360; t=0.006; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=360; percent=0.05; passedTime=815.746; remTime=1.63068e+06; MLUPs=0.453557
+[Timer] step=360; percent=0.05; passedTime=815.746; remTime=1.63068e+06; MLUPs=0.453557
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[LatticeStatistics] step=380; t=0.00633333; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=380; percent=0.0527778; passedTime=861.194; remTime=1.63087e+06; MLUPs=0.453398
+[Timer] step=380; percent=0.0527778; passedTime=861.194; remTime=1.63087e+06; MLUPs=0.453398
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[LatticeStatistics] step=400; t=0.00666667; uMax=0; avEnergy=0; avRho=0.00390943
+[Timer] step=400; percent=0.0555556; passedTime=906.615; remTime=1.631e+06; MLUPs=0.453667
+[Timer] step=400; percent=0.0555556; passedTime=906.615; remTime=1.631e+06; MLUPs=0.453667
+[ValueTracer] average=0.00390943; stdDev/average=2.33865e-16
+[main] Simulation converged. -- 401
+[main] ------401
+[main] Simulation converged. -- 401
+[main] ./100case33_mcHardy/100case33.csv
+0.000, 1.000000e+00, 0.000000e+00, 0.000000e+00, 0.000000e+00, 0.000000e+00, 0.000000e+00
+0.010, 1.578233e+00, 2.296766e-03, 7.171998e-05, 7.735240e-01, 0.000000e+00, 6.938894e-18
+0.020, 1.353354e+00, 2.333787e-03, 7.482115e-05, 6.790522e-01, -2.081668e-17, -3.469447e-18
+0.030, 1.140020e+00, 2.293211e-03, 7.522198e-05, 5.822391e-01, -6.938894e-18, 3.469447e-18
+0.040, 9.472084e-01, 2.213055e-03, 7.393170e-05, 4.907047e-01, 3.469447e-18, 6.938894e-18
+0.050, 7.785293e-01, 2.106737e-03, 7.156719e-05, 4.080966e-01, 2.081668e-17, 3.469447e-18
+0.060, 6.341857e-01, 1.990072e-03, 6.850536e-05, 3.358863e-01, -3.469447e-18, -6.938894e-18
+0.070, 5.128017e-01, 1.864917e-03, 6.500941e-05, 2.740797e-01, 3.469447e-18, -3.469447e-18
+0.080, 4.119508e-01, 1.738851e-03, 6.124800e-05, 2.220772e-01, 0.000000e+00, -3.469447e-18
+0.090, 3.290966e-01, 1.611107e-03, 5.735682e-05, 1.788158e-01, 3.469447e-18, 1.040834e-17
+0.100, 2.615037e-01, 1.487231e-03, 5.342427e-05, 1.432192e-01, 0.000000e+00, 6.938894e-18
+0.110, 2.068265e-01, 1.364977e-03, 4.952488e-05, 1.141166e-01, -1.387779e-17, -3.469447e-18
+0.120, 1.616807e-01, 1.244437e-03, 4.556687e-05, 8.932703e-02, 0.000000e+00, 0.000000e+00
+0.130, 1.261304e-01, 1.130083e-03, 4.180523e-05, 6.977968e-02, -2.775558e-17, -1.387779e-17
+0.140, 9.818883e-02, 1.025407e-03, 3.824811e-05, 5.437754e-02, 2.775558e-17, 0.000000e+00
+0.150, 7.634152e-02, 9.268575e-04, 3.491517e-05, 4.232182e-02, 0.000000e+00, 6.938894e-18
+0.160, 5.927159e-02, 8.815805e-04, 3.180195e-05, 3.288442e-02, 1.387779e-17, 0.000000e+00
+0.170, 4.597986e-02, 8.127593e-04, 2.890911e-05, 2.552954e-02, 0.000000e+00, 0.000000e+00
+0.180, 3.563369e-02, 7.334780e-04, 2.623515e-05, 1.979635e-02, -1.387779e-17, 6.938894e-18
+0.190, 2.759945e-02, 6.489246e-04, 2.377202e-05, 1.534134e-02, 0.000000e+00, 6.938894e-18
+0.200, 2.136173e-02, 5.660600e-04, 2.150515e-05, 1.187885e-02, -1.387779e-17, -6.938894e-18
+0.210, 1.652706e-02, 4.873773e-04, 1.941838e-05, 9.193865e-03, -1.387779e-17, 0.000000e+00
+0.220, 1.278027e-02, 4.155172e-04, 1.750446e-05, 7.111457e-03, 1.387779e-17, 6.938894e-18
+0.230, 9.880331e-03, 3.510210e-04, 1.574943e-05, 5.499263e-03, -2.775558e-17, -6.938894e-18
+0.240, 7.635878e-03, 2.944105e-04, 1.414743e-05, 4.250842e-03, -1.387779e-17, -1.387779e-17
+0.250, 5.900223e-03, 2.452725e-04, 1.268433e-05, 3.285227e-03, -1.387779e-17, 0.000000e+00
+0.260, 4.558022e-03, 2.032227e-04, 1.135630e-05, 2.538228e-03, 0.000000e+00, -1.387779e-17
+0.270, 3.520720e-03, 1.675011e-04, 1.014997e-05, 1.960835e-03, 2.775558e-17, 6.938894e-18
+0.280, 2.719041e-03, 1.374625e-04, 9.216739e-06, 1.514476e-03, 1.387779e-17, 6.938894e-18
+0.290, 2.099738e-03, 1.123568e-04, 8.382620e-06, 1.169626e-03, -1.387779e-17, 6.938894e-18
+0.300, 1.621311e-03, 9.152506e-05, 7.502795e-06, 9.031696e-04, 2.775558e-17, 0.000000e+00
+0.310, 1.251832e-03, 7.431924e-05, 6.623023e-06, 6.973779e-04, -1.387779e-17, -6.938894e-18
+0.320, 9.664834e-04, 6.018400e-05, 5.776981e-06, 5.384243e-04, -1.387779e-17, 0.000000e+00
+0.330, 7.461587e-04, 4.861265e-05, 4.987995e-06, 4.156883e-04, 0.000000e+00, 6.938894e-18
+0.340, 5.760366e-04, 3.917881e-05, 4.268996e-06, 3.209115e-04, 2.775558e-17, 1.387779e-17
+0.350, 4.446977e-04, 3.150908e-05, 3.626029e-06, 2.477402e-04, 0.000000e+00, 7.703720e-32
+0.360, 3.432976e-04, 2.529376e-05, 3.059494e-06, 1.912460e-04, 0.000000e+00, -1.387779e-17
+0.370, 2.650196e-04, 2.026036e-05, 2.566524e-06, 1.476345e-04, -1.387779e-17, 0.000000e+00
+0.380, 2.045895e-04, 1.620525e-05, 2.141911e-06, 1.139661e-04, 1.387779e-17, -6.938894e-18
+0.390, 1.579409e-04, 1.294416e-05, 1.779335e-06, 8.797669e-05, 0.000000e+00, -6.938894e-18
+0.400, 1.219296e-04, 1.032723e-05, 1.472015e-06, 6.791383e-05, -1.387779e-17, 0.000000e+00
+0.410, 9.413106e-05, 8.230200e-06, 1.213299e-06, 5.242715e-05, 0.000000e+00, 1.387779e-17
+0.420, 7.267154e-05, 6.552593e-06, 9.967506e-07, 4.047231e-05, 0.000000e+00, -6.938894e-18
+0.430, 5.610583e-05, 5.212104e-06, 8.164263e-07, 3.124425e-05, -1.387779e-17, 0.000000e+00
+0.440, 4.331741e-05, 4.142423e-06, 6.669298e-07, 2.412068e-05, 0.000000e+00, 1.387779e-17
+0.450, 3.344502e-05, 3.289687e-06, 5.434838e-07, 1.862181e-05, 0.000000e+00, 6.938894e-18
+0.460, 2.582343e-05, 2.610643e-06, 4.419031e-07, 1.437688e-05, -2.775558e-17, -1.387779e-17
+0.470, 1.993943e-05, 2.070369e-06, 3.585786e-07, 1.109998e-05, -4.163336e-17, -2.081668e-17
+0.480, 1.539668e-05, 1.640902e-06, 2.904208e-07, 8.570235e-06, 0.000000e+00, 6.938894e-18
+0.490, 1.188939e-05, 1.299762e-06, 2.347828e-07, 6.617279e-06, 0.000000e+00, 1.387779e-17
+0.500, 9.181402e-06, 1.028992e-06, 1.894893e-07, 5.109534e-06, -1.387779e-17, 6.938894e-18
+0.510, 7.090513e-06, 8.142103e-07, 1.527209e-07, 3.945487e-06, 1.387779e-17, 0.000000e+00
+0.520, 5.476021e-06, 6.439530e-07, 1.229299e-07, 3.046749e-06, 2.775558e-17, 1.387779e-17
+0.530, 4.229339e-06, 5.090651e-07, 9.883420e-08, 2.352835e-06, 1.387779e-17, -6.938894e-18
+0.540, 3.266629e-06, 4.022600e-07, 7.937530e-08, 1.817039e-06, 0.000000e+00, -6.938894e-18
+0.550, 2.523179e-06, 3.177331e-07, 6.368357e-08, 1.403319e-06, -1.387779e-17, -6.938894e-18
+0.560, 1.949024e-06, 2.508711e-07, 5.104617e-08, 1.083847e-06, 1.387779e-17, 1.387779e-17
+0.570, 1.505593e-06, 1.980058e-07, 4.088092e-08, 8.371431e-07, -2.775558e-17, -1.387779e-17
+0.580, 1.163107e-06, 1.562259e-07, 3.271326e-08, 6.466236e-07, -1.387779e-17, -2.081668e-17
+0.590, 8.985744e-07, 1.232203e-07, 2.615743e-08, 4.994871e-07, 1.232595e-32, -6.938894e-18
+0.600, 6.942413e-07, 9.715664e-08, 2.090039e-08, 3.858494e-07, -1.387779e-17, 0.000000e+00
+0.610, 5.364008e-07, 7.658241e-08, 1.668861e-08, 2.980801e-07, 1.387779e-17, 6.938894e-18
+0.620, 4.144680e-07, 6.034734e-08, 1.331705e-08, 2.302870e-07, 0.000000e+00, 6.938894e-18
+0.630, 3.202695e-07, 4.754057e-08, 1.062021e-08, 1.779213e-07, 1.387779e-17, -6.938894e-18
+0.640, 2.474932e-07, 3.744149e-08, 8.464643e-09, 1.374701e-07, -1.387779e-17, 6.938894e-18
+0.650, 1.912644e-07, 2.948008e-08, 6.742902e-09, 1.062211e-07, 0.000000e+00, -6.938894e-18
+0.660, 1.478184e-07, 2.320574e-08, 5.368572e-09, 8.207972e-08, 1.387779e-17, 6.938894e-18
+0.670, 1.142474e-07, 1.826237e-08, 4.272235e-09, 6.342837e-08, 1.387779e-17, 0.000000e+00
+0.680, 8.830545e-08, 1.436872e-08, 3.398171e-09, 4.901780e-08, -2.775558e-17, -6.938894e-18
+0.690, 6.825785e-08, 1.130268e-08, 2.701706e-09, 3.788324e-08, 1.387779e-17, 2.311116e-31
+0.700, 5.276446e-08, 8.888962e-09, 2.147048e-09, 2.927948e-08, -1.387779e-17, -2.081668e-17
+0.710, 4.079005e-08, 6.989237e-09, 1.705549e-09, 2.263095e-08, 1.387779e-17, 6.938894e-18
+0.720, 3.153486e-08, 5.494407e-09, 1.354293e-09, 1.749304e-08, 2.775558e-17, 1.387779e-17
+0.730, 2.438100e-08, 4.318441e-09, 1.074962e-09, 1.352232e-08, -1.387779e-17, -6.938894e-18
+0.740, 1.885108e-08, 3.393527e-09, 8.529285e-10, 1.045347e-08, 1.387779e-17, 0.000000e+00
+0.750, 1.457622e-08, 2.666220e-09, 6.765139e-10, 8.081522e-09, -1.387779e-17, 0.000000e+00
+0.760, 1.127140e-08, 2.094421e-09, 5.364022e-10, 6.248121e-09, 1.387779e-17, 6.938894e-18
+0.770, 8.716350e-09, 1.644966e-09, 4.251672e-10, 4.830916e-09, 0.000000e+00, -1.387779e-17
+0.780, 6.740862e-09, 1.291748e-09, 3.368904e-10, 3.735367e-09, 0.000000e+00, 6.938894e-18
+0.790, 5.213389e-09, 1.014210e-09, 2.668590e-10, 2.888424e-09, -1.387779e-17, -6.938894e-18
+0.800, 4.032260e-09, 7.961767e-10, 2.113212e-10, 2.233638e-09, 0.000000e+00, 0.000000e+00
+0.810, 3.118892e-09, 6.249190e-10, 1.672925e-10, 1.727385e-09, 1.387779e-17, 0.000000e+00
+0.820, 2.412541e-09, 4.904239e-10, 1.323985e-10, 1.335951e-09, -1.387779e-17, 6.938894e-18
+0.830, 1.866256e-09, 3.848163e-10, 1.047534e-10, 1.033280e-09, 0.000000e+00, 1.387779e-17
+0.840, 1.443736e-09, 3.019041e-10, 8.285689e-11, 7.992329e-10, 0.000000e+00, 6.938894e-18
+0.850, 1.116920e-09, 2.368188e-10, 6.551859e-11, 6.182426e-10, 2.775558e-17, 0.000000e+00
+0.860, 8.641101e-10, 1.857327e-10, 5.179324e-11, 4.782770e-10, 0.000000e+00, 6.938894e-18
+0.870, 6.685306e-10, 1.456387e-10, 4.093009e-11, 3.700352e-10, 1.387779e-17, 2.081668e-17
+0.880, 5.172076e-10, 1.141738e-10, 3.233369e-11, 2.863274e-10, 0.000000e+00, -1.387779e-17
+0.890, 4.001079e-10, 8.948009e-11, 2.553197e-11, 2.215966e-10, 1.387779e-17, 6.938894e-18
+0.900, 3.094685e-10, 7.009826e-11, 2.014960e-11, 1.715481e-10, 0.000000e+00, 0.000000e+00
+0.910, 2.392843e-10, 5.488199e-11, 1.589040e-11, 1.328623e-10, 1.387779e-17, -6.938894e-18
+0.920, 1.849062e-10, 4.292855e-11, 1.251771e-11, 1.029747e-10, 1.387779e-17, 0.000000e+00
+0.930, 1.427306e-10, 3.353029e-11, 9.844348e-12, 7.990709e-11, 0.000000e+00, 6.938894e-18
+0.940, 1.099633e-10, 2.612732e-11, 7.722156e-12, 6.213392e-11, 1.387779e-17, 2.081668e-17
+0.950, 8.443024e-11, 2.027833e-11, 6.031342e-12, 4.848226e-11, 0.000000e+00, 6.938894e-18
+0.960, 6.443268e-11, 1.563394e-11, 4.678480e-12, 3.805446e-11, 0.000000e+00, -6.938894e-18
+0.970, 4.863820e-11, 1.191414e-11, 3.586242e-12, 3.016830e-11, 0.000000e+00, -1.387779e-17
+0.980, 3.598466e-11, 8.892886e-12, 2.691403e-12, 2.431268e-11, 1.387779e-17, 0.000000e+00
+0.990, 2.561307e-11, 6.382228e-12, 1.941669e-12, 2.011497e-11, 0.000000e+00, 0.000000e+00
+1.000, 0.000000e+00, 0.000000e+00, 0.000000e+00, 0.000000e+00, 0.000000e+00, 0.000000e+00
+[Timer] 
+[Timer] ----------------Summary:Timer----------------
+[Timer] measured time (rt) : 911.692s
+[Timer] measured time (cpu): 908.490s
+[Timer] average MLUPs :       0.452
+[Timer] average MLUPps:       0.452
+[Timer] ---------------------------------------------
