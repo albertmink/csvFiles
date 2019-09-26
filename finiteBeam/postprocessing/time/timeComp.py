@@ -6,8 +6,8 @@ from matplotlib2tikz import save as tikz_save
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 
-mesoDF = pd.read_csv('./meso_job_2562.csv')
-macroDF = pd.read_csv('./macro_job_2597.csv')
+mesoDF = pd.read_csv('./job.2562.csv')
+macroDF = pd.read_csv('./job.2597.csv')
 
 
 fig, ax = plt.subplots()
@@ -22,20 +22,25 @@ barWidth = 0.08
 dataMeso = (mesoDF['sec'].tolist())
 dataMacro = macroDF['sec'].tolist()
 
-xLabels = ['b=2', 'b=4', 'b=8', 'b=12', 'b=20', 'b=30']
+xLabels = ['b=2', 'b=4', 'b=6', 'b=8', 'b=12', 'b=20', 'b=30']
 x = np.arange(len(xLabels))
 
-ax.bar(x-2*width, dataMeso[0:6],   barWidth, label='a=0.1', color='gold'      , hatch='-'*3)
-ax.bar(x-1*width, dataMeso[6:12],  barWidth, label='a=0.4', color='limegreen' , hatch='-'*3)
-ax.bar(x+0*width, dataMeso[12:18], barWidth, label='a=0.7', color='royalblue' , hatch='-'*3)
-ax.bar(x+1*width, dataMeso[18:24], barWidth, label='a=0.9', color='firebrick' , hatch='-'*3)
-ax.bar(x+2*width, dataMeso[24:30], barWidth, label='a=1.0', color='blueviolet', hatch='-'*3)
+print(dataMeso[0:7])
+print(dataMeso[7:14])
+print(dataMeso[14:21])
+print(dataMeso[21:28])
+print(dataMeso[28:35])
+ax.bar(x-2*width, dataMeso[0:7],   barWidth, label='a=0.1', color='gold'      , hatch='-'*3)
+ax.bar(x-1*width, dataMeso[7:14],  barWidth, label='a=0.4', color='limegreen' , hatch='-'*3)
+ax.bar(x+0*width, dataMeso[14:21], barWidth, label='a=0.7', color='royalblue' , hatch='-'*3)
+ax.bar(x+1*width, dataMeso[21:28], barWidth, label='a=0.9', color='firebrick' , hatch='-'*3)
+ax.bar(x+2*width, dataMeso[28:35], barWidth, label='a=1.0', color='blueviolet', hatch='-'*3)
 
-ax.bar(x-2*width+barWidth, dataMacro[0:6],   barWidth, label='a=0.1', color='gold'      , hatch='/'*4)
-ax.bar(x-1*width+barWidth, dataMacro[6:12],  barWidth, label='a=0.4', color='limegreen' , hatch='/'*4)
-ax.bar(x+0*width+barWidth, dataMacro[12:18], barWidth, label='a=0.7', color='royalblue' , hatch='/'*4)
-ax.bar(x+1*width+barWidth, dataMacro[18:24], barWidth, label='a=0.9', color='firebrick' , hatch='/'*4)
-ax.bar(x+2*width+barWidth, dataMacro[24:30], barWidth, label='a=1.0', color='blueviolet', hatch='/'*4)
+ax.bar(x-2*width+barWidth, dataMacro[0:7],   barWidth, label='a=0.1', color='gold'      , hatch='/'*3)
+ax.bar(x-1*width+barWidth, dataMacro[7:14],  barWidth, label='a=0.4', color='limegreen' , hatch='/'*3)
+ax.bar(x+0*width+barWidth, dataMacro[14:21], barWidth, label='a=0.7', color='royalblue' , hatch='/'*3)
+ax.bar(x+1*width+barWidth, dataMacro[21:28], barWidth, label='a=0.9', color='firebrick' , hatch='/'*3)
+ax.bar(x+2*width+barWidth, dataMacro[28:35], barWidth, label='a=1.0', color='blueviolet', hatch='/'*3)
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Seconds')
