@@ -12,7 +12,8 @@ for a in range(1,6):
     cases.append(i)
     #fin = open("./job.2645_"+str(i)+".out", 'rt') #mink 50er data
     #fin = open("./job.2597_"+str(i)+".out", 'rt') #mink 100er data
-    fin = open("./job.2562_"+str(i)+".out", 'rt') #mcHardyRK 100er data
+#    fin = open("./job.2562_"+str(i)+".out", 'rt') #mcHardyRK 100er data
+    fin = open("./../../mcHardy160/job.3025_"+str(i)+".out", 'rt') #mcHardyRK 160er data
     data = fin.readlines()
     # get iteration
     for line in data:
@@ -30,4 +31,4 @@ for a in range(1,6):
         break
 
 df = pd.DataFrame(np.array([timeCPU,iterations]).transpose(), index=cases, columns=['sec','it'])
-df.to_csv('./job.2562.csv',index_label='case')
+df.to_csv('./mcHardy160.csv',index_label='case')

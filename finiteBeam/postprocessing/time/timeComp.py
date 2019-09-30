@@ -6,8 +6,8 @@ from matplotlib2tikz import save as tikz_save
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 
-mesoDF = pd.read_csv('./job.2562.csv')
-macroDF = pd.read_csv('./job.2597.csv')
+mesoDF = pd.read_csv('./mcHardy160.csv')
+macroDF = pd.read_csv('./mink160.csv')
 
 
 fig, ax = plt.subplots()
@@ -23,7 +23,8 @@ dataMeso = (mesoDF['sec'].tolist())
 dataMacro = macroDF['sec'].tolist()
 
 xLabels = ['b=2', 'b=4', 'b=6', 'b=8', 'b=12', 'b=20', 'b=30']
-x = np.arange(len(xLabels))
+x = np.arange(len(xLabels),)
+print(x)
 
 print(dataMeso[0:7])
 print(dataMeso[7:14])
@@ -45,7 +46,7 @@ ax.bar(x+2*width+barWidth, dataMacro[28:35], barWidth, label='a=1.0', color='blu
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Seconds')
 ax.set_xticks(x)
-ax.set_ylim((0,4000))
+#ax.set_ylim((0,4000))
 ax.set_xticklabels(xLabels)
 custom_lines = [Line2D([0],[0], color='gold', lw=4),
 Line2D([0],[0], color='limegreen', lw=4),
