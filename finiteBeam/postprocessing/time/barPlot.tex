@@ -1,0 +1,41 @@
+\documentclass[class=minimal,border=0pt]{standalone}
+\usepackage{pgfplots,tikz}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{patterns,pgfplots.colorbrewer}
+\pgfplotsset{colormap/Set1-5}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+ylabel=Minutes,
+xlabel=Optical depth,
+enlargelimits=0.05,
+ybar legend,
+legend pos=outer north east,
+legend entries={a=0.1,a=0.4,a=0.7,a=0.9,a=1.0},
+symbolic x coords = {2,4,6,8,12,20,30},
+xtick=data,
+ybar interval=0.8,
+width=18cm,
+height=6cm,
+ymax=120,
+cycle multi list={
+  [of colormap] \nextlist
+  {}, postaction={pattern=north east lines}
+}
+]
+\addlegendimage{index of colormap={0 of Set1-5},fill}
+\addlegendimage{index of colormap={1 of Set1-5},fill}
+\addlegendimage{index of colormap={2 of Set1-5},fill}
+\addlegendimage{index of colormap={3 of Set1-5},fill}
+\addlegendimage{index of colormap={4 of Set1-5},fill}
+\addlegendimage{pattern=north east line, fill}
+\foreach \i in{1,4,7,9,10}
+{
+  \addplot+[fill] table [x index=3, y index=1, col sep=comma] {mink160_0\i.csv};
+  \addplot+[fill]
+    table [x index=3, y index=1, col sep=comma] {mcHardy160_0\i.csv};
+}
+\end{axis}
+\end{tikzpicture}
+\end{document}
