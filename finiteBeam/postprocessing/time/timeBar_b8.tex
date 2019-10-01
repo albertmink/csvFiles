@@ -1,0 +1,27 @@
+\documentclass[class=minimal,border=0pt]{standalone}
+\usepackage{pgfplots,tikz}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{patterns,pgfplots.colorbrewer}
+\pgfplotsset{colormap/Set1-5}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+ylabel=Seconds,
+xlabel=Scattering albedo,
+enlargelimits=0.05,
+ybar legend,
+legend pos=north west,
+legend entries={macro RTLBM, meso RTLBM},
+symbolic x coords = {0.1,0.4,0.7,0.9,1.0,1.9},
+xtick=data,
+ybar interval=0.8,
+cycle multi list={
+  [of colormap]
+}
+]
+\addplot+[fill] table [x index=4, y index=1, col sep=comma] {mink160_8.csv};
+\addplot+[fill] table [x index=4, y index=1, col sep=comma] {mcHardy160_8.csv};
+\end{axis}
+\end{tikzpicture}
+\end{document}
